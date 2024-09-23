@@ -539,7 +539,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-body">
+          <!-- <div class="modal-body"> -->
             <!-- Carousel Bootstrap -->
             <div
               id="carouselExample"
@@ -785,12 +785,29 @@
     <!-- Script untuk mengatur slide pada klik thumbnail -->
     <script>
       const carouselModal = document.getElementById("carouselModal");
+      const carouselElement = document.getElementById("carouselExample");
+      const carouselInstance = new bootstrap.Carousel(carouselElement); // Inisialisasi carousel
+
+      // Event listener ketika modal dibuka untuk pindah ke slide yang sesuai
       carouselModal.addEventListener("show.bs.modal", function (event) {
         const button = event.relatedTarget; // Gambar yang diklik
         const slideIndex = button.getAttribute("data-bs-slide-to"); // Ambil index slide
-        const carousel = document.getElementById("carouselExample");
-        const carouselInstance = new bootstrap.Carousel(carousel);
         carouselInstance.to(slideIndex); // Pindahkan ke slide yang sesuai
+      });
+
+      // Tambahkan event listener untuk keyboard
+      document.addEventListener("keydown", function (event) {
+        if (carouselModal.classList.contains("show")) {
+          // Pastikan modal terbuka
+          if (event.key === "ArrowLeft") {
+            // Geser ke slide sebelumnya saat tombol panah kiri ditekan
+            carouselInstance.prev();
+          }
+          if (event.key === "ArrowRight") {
+            // Geser ke slide berikutnya saat tombol panah kanan ditekan
+            carouselInstance.next();
+          }
+        }
       });
     </script>
 
