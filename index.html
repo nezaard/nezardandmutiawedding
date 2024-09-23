@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nezaard & Mutia Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Data AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h1>Nezard Wildan & Mutia Ratih</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+          >Open Invitation</a
+        >
+      </main>
+    </section>
+
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-md bg-transparent sticky-top mynavbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#hero">Nezard & Mutia</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 5 Oktober 2024 di Pandeglang, Banten.</h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Mutia Ratih</h3>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  praesentium aut ipsa perferendis, incidunt soluta?
+                </p> -->
+                <p>
+                  Putri ketiga dari Bpk. Mukti<br />
+                  dan <br />
+                  Ibu Tati Setiawati
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/Mutia.jpeg"
+                  alt="Mutia Ratih"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/Nezaard.jpeg"
+                  alt="Nezaard"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>
+                  Nezard Wildan <br />
+                  Kurniawan Syah
+                </h3>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  praesentium aut ipsa perferendis, incidunt soluta?
+                </p> -->
+                <p>
+                  Putra pertama dari <br />Bpk. Iwan Kurniawan Syah <br />
+                  dan <br />
+                  Ibu Yayan Riewayanty
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat: Rumah Abah H. Sain <br />
+              Jl. Desa Palanyar Kp. Palanyar RT/RW 004/005 Desa Palanyar,
+              Kecamatan Cipeucang, Kabupaten Pandeglang, Provinsi Banten
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.8213352253852!2d106.0134184!3d-6.3757454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e423b38b04711df%3A0x61413a60c004670c!2sBD.Siti%20aisyah%2CSKM.S%2CTr.Keb!5e0!3m2!1sid!2sid!4v1724656731510!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <a
+              href="https://maps.app.goo.gl/yUPViiMs8aK3iYUQ6"
+              class="btn btn-light btn-sm my-3"
+              target="_blank"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>09.00 - 11.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Sabtu, 5 Oktober 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Sabtu, 5 Oktober 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="closing" class="closing">
+      <div
+        class="container"
+        data-aos="fade-down"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <div class="row justify-content-center text-center">
+          <div class="kartu">
+            <img
+              src="img/1726563867902.jpg"
+              class="w-100 rounded mt-3"
+              alt=""
+            />
+            <!-- <p>Merupakan suatu kebahagiaan bagi kami atas kehadiran Bapak/Ibu untuk memberikan doa restu</p> -->
+            <h2 class="text-center m-4">
+              Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan
+              pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu
+              merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta
+              dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar
+              terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir. -
+              Q.S Ar-Rum : 21
+            </h2>
+            <!-- <h3 class="text-center">Hormat Kami Yang Mengundang</h3> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="row">
+          <div class="col-4 col-lg-4 mb-4 col-sm-4 mb-lg-0">
+            <img
+              src="img/DSCF0004.JPG"
+              class="gambar w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-left"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/1726562929451.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-left"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/1726564442724.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-left"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/1726564132993 (1).jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-left"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+          </div>
+
+          <div class="col-4 col-lg-4 col-sm-4 mb-lg-0">
+            <img
+              src="img/1726564048425.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-down"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/1726563712230.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="zoom-in"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/1726563279097.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+          </div>
+
+          <div class="col-4 col-lg-4 col-sm-4 mb-4 mb-lg-0">
+            <img
+              src="img/1726563867902.jpg"
+              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/1726497335747 (1).jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/DSCF0003.JPG"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+
+            <img
+              src="img/1726564323635 (1).jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <img src="img/logo-bca.png" class="gift-logo mb-2" /><br />
+                6565085798 - MUTIA RATIH
+              </li>
+              <li class="list-group-item">
+                <img src="img/logo-bca.png" class="gift-logo mb-2" /><br />
+                4930574886 - NEZARD WILDAN KURNIAWAN SYAH
+              </li>
+            </ul>
+            <p class="mt-3">
+              <b>
+                Dengan penuh rasa syukur dan bahagia, kami mengucapkan terima
+                kasih yang sebesar-besarnya atas kehadiran dan doa restu yang
+                telah Anda berikan di hari istimewa kami. Kehadiran Anda menjadi
+                anugerah dan kehormatan bagi kami dalam memulai lembaran baru
+                kehidupan ini.
+              </b>
+            </p>
+            <p class="mt-3">
+              <b>
+                Semoga kebaikan dan kebahagiaan senantiasa menyertai langkah
+                kita semua. Terima kasih atas segala doa, dukungan, dan
+                kebersamaan.
+              </b>
+            </p>
+            <p><i>Hormat Kami Yang Mengundang</i></p>
+            <h5>Nezaard & Mutia</h5>           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; 2024 Nezaard & Mutia Wedding. All Rights Reserved.</small
+            >
+            <small class="block"
+              >Design by
+              <a href="https://instagram.com/nezaard">@nezaard</a
+              >.</small
+            >
+
+            <ul class="mt-3">
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/Emily Hearn - Found a Heart.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 10, // required
+        day: 5, // required
+        hours: 9, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "Hari" },
+          hours: { singular: "jam", plural: "Jam" },
+          minutes: { singular: "menit", plural: "Menit" },
+          seconds: { singular: "detik", plural: "Detik" },
+        },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.5;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          });
+        });
+      });
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+
+      document.querySelector("#nama").value = nama;
+    </script>
+  </body>
+</html>
