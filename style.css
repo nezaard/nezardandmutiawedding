@@ -1,5 +1,5 @@
 :root {
-  --birumuda: #de1e5b;
+  --burgundy: #800020;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
@@ -37,8 +37,9 @@ body {
 }
 
 .hero h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 5rem;
+  font-family: "Brittany Signature", cursive;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .hero h4 {
@@ -50,13 +51,13 @@ body {
 }
 
 .hero a {
-  color: var(--birumuda);
+  color: var(--burgundy);
   background-color: white;
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--birumuda);
+  background-color: var(--burgundy);
   color: white;
 }
 
@@ -71,10 +72,10 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: "Sacramento", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 3.2rem;
   font-weight: bold;
-  color: var(--birumuda);
+  color: var(--burgundy);
 }
 
 .mynavbar .nav-link {
@@ -88,7 +89,7 @@ body {
   /* filter: blur(100px); */
   background-position: center;
   margin-top: -6rem;
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 5rem;
 }
 
@@ -98,10 +99,19 @@ body {
 .gallery h2,
 .rsvp h2,
 .gifts h2 {
-  color: var(--birumuda);
-  font-family: "Sacramento";
-  font-size: 5rem;
-  font-weight: bold;
+  color: var(--burgundy);
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  /* font-weight: bold; */
+  font-style: italic;
+}
+
+.gifts h3 {
+  color: var(--burgundy);
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  /* font-weight: bold; */
+  font-style: italic;
 }
 
 .home h2 {
@@ -109,7 +119,7 @@ body {
 }
 
 .home h3 {
-  color: #de1e5b;
+  color: #800020;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-shadow: 2px 1px 2px white !important;
@@ -125,9 +135,9 @@ body {
 }
 
 .home .couple h3 {
-  font-family: "Sacramento";
-  font-size: 2.4rem;
-  color: var(--birumuda);
+  font-family: "Pacifico", cursive;
+  font-size: 2.2rem;
+  color: var(--burgundy);
 }
 
 .home .couple img {
@@ -148,7 +158,7 @@ body {
 
 .home .heart i {
   margin: auto;
-  color: var(--birumuda);
+  color: var(--burgundy);
 }
 
 .info {
@@ -157,7 +167,7 @@ body {
   background-position: center;
   background-size: cover;
   color: black;
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
@@ -192,17 +202,14 @@ body {
   font-weight: 300;
 }
 
-.story,
 .gallery,
-.rsvp,
 .gifts {
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 8rem;
 }
 
 .story span,
-.gallery span,
-.gifts span {
+.gallery span .gifts span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -219,138 +226,13 @@ body {
   font-weight: 300;
 }
 
-.timeline {
-  list-style: none;
-  padding: 1.4rem 0;
-  margin-top: 1rem;
-  position: relative;
-}
-
-.timeline::before {
-  content: "";
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  width: 1px;
-  background-color: #ccc;
-  left: 50%;
-}
-
-.timeline li {
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.timeline li::before,
-.timeline li::after {
-  content: "";
-  display: table;
-}
-
-.timeline li::after {
-  clear: both;
-}
-
-.timeline li .timeline-image {
-  width: 160px;
-  height: 160px;
-  background-color: #ccc;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.timeline li .timeline-panel {
-  width: 40%;
-  float: left;
-  border: 1px solid #ccc;
-  padding: 2rem;
-  position: relative;
-  border-radius: 8px;
-  background-color: #fff;
-}
-
-.timeline li .timeline-panel::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  top: 80px;
-  right: -15px;
-}
-
-.timeline li .timeline-panel::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  top: 81px;
-  right: -13px;
-}
-
-.timeline li.timeline-inverted .timeline-panel {
-  float: right;
-}
-
-.timeline li.timeline-inverted .timeline-panel::before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-
-.timeline li.timeline-inverted .timeline-panel::after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -13px;
-  right: auto;
-}
-
 .gallery {
   background-color: #f5f5f5;
 }
 
-.rsvp {
-  background-color: var(--bg);
-}
-
-.rsvp h2 {
-  font-size: 4.5rem;
-}
-
-.rsvp p {
-  color: white;
-}
-
-.rsvp form label {
-  color: white;
-}
-
-.rsvp button {
-  background-color: var(--birumuda);
-  color: white;
-  border: 1px solid var(--birumuda);
-}
-
-.rsvp button:hover {
-  background-color: white;
-  color: var(--birumuda);
-  border: 1px solid white;
-}
-
 footer {
   padding: 3rem;
-  background-color: var(--birumuda);
+  background-color: var(--burgundy);
   color: white;
 }
 
@@ -395,7 +277,7 @@ footer li {
 }
 
 .gifts h5 {
-  color: #de1e5b;
+  color: #800020;
 }
 .closing {
   background-color: white;
@@ -416,13 +298,74 @@ footer li {
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
-.kartu h2{
+.kartu h2 {
   font-size: 15px;
 }
 /* .card:hover:before {
   background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
   animation: rotBGimg 3.5s linear infinite;
 } */
+.modal-body {
+  text-align: left !important;
+}
+
+.select-responsive {
+  font-size: 0.9rem; /* Ukuran font lebih kecil */
+  padding: 0.5rem; /* Padding yang lebih kecil */
+  max-width: 100%; /* Memastikan lebar maksimal */
+}
+
+.status-box {
+  display: inline-block !important;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 0 !important; /* Ukuran Font Lebih Kecil */
+}
+
+.Hadir {
+  background-color: green;
+}
+
+.Tidak-Hadir {
+  background-color: red;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.ucapan {
+  margin-top: 5px;
+  word-wrap: break-word; /* Memastikan kata panjang terputus */
+  overflow-wrap: break-word; /* Memastikan teks panjang tetap dalam batas modal */
+  word-break: break-all; /* Memaksa pemutusan kata jika terlalu panjang */
+  max-width: 100%; /* Memastikan lebar maksimal */
+  text-align: left !important;
+}
+
+.btn-outline-custom {
+  color: var(--burgundy); /* Ganti warna teks */
+  /* background-color: #007bff; Ganti warna latar belakang */
+  border-color: var(--burgundy) /* Ganti warna border */
+}
+
+.btn-outline-custom:hover {
+  color: #fff; /* Ganti warna teks saat hover */
+  background-color: var(--burgundy); /* Ganti warna latar belakang saat hover */
+  border-color: var(--burgundy); /* Ganti warna border saat hover */
+}
 
 @keyframes rotating {
   from {
@@ -488,7 +431,7 @@ footer li {
 /* tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 65%;
+    font-size: 75%;
   }
 
   .simply-countdown > .simply-section {
@@ -519,7 +462,7 @@ footer li {
 /* mobile phone */
 @media (max-width: 576px) {
   html {
-    font-size: 60%;
+    font-size: 70%;
   }
 
   .simply-countdown > .simply-section {
@@ -551,7 +494,7 @@ footer li {
   .kartu {
     width: 300px;
   }
-  .kartu img{
+  .kartu img {
     width: 275px !important;
     border-radius: 15px !important;
     margin-top: 12px !important;
