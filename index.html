@@ -18,6 +18,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.cdnfonts.com/css/brittany-signature"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- simplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
@@ -49,9 +63,11 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
-        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-        <h1>Nezard Wildan & Mutia Ratih</h1>
-        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <h4 class="mb-4">Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h1>Mutia Ratih</h1>
+        <h1>&</h1>
+        <h1>Nezard Wildan</h1>
+        <p class="mt-4">Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
         <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
           >Open Invitation</a
@@ -64,7 +80,7 @@
       class="navbar navbar-expand-md bg-transparent sticky-top mynavbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="#hero">Nezard & Mutia</a>
+        <a class="navbar-brand" href="#hero">Mutia & Nezard</a>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -94,9 +110,9 @@
             <div class="navbar-nav ms-auto">
               <a class="nav-link active" href="#home">Home</a>
               <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#gifts">RSVP & Gifts</a>
               <a class="nav-link" href="#gallery">Gallery</a>
               <!-- <a class="nav-link" href="#rsvp">RSVP</a> -->
-              <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
         </div>
@@ -118,7 +134,10 @@
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
-            <h3>Diselenggarakan pada 5 Oktober 2024 di Pandeglang, Banten.</h3>
+            <h3>
+              Diselenggarakan pada 5 Oktober 2024 di Cipeucang <br />
+              Pandeglang, Banten.
+            </h3>
             <p>
               Oleh karena itu, dengan segala hormat, kami bermaksud untuk
               mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
@@ -242,12 +261,12 @@
           </div>
         </div>
 
-        <div class="row justify-content-center mt-4">
+        <div class="row justify-content-center mt-3">
           <div class="col-md-8 col-10 text-center">
             <p class="alamat">
-              Alamat: Rumah Abah H. Sain <br />
-              Jl. Desa Palanyar Kp. Palanyar RT/RW 004/005 Desa Palanyar,
-              Kecamatan Cipeucang, Kabupaten Pandeglang, Provinsi Banten
+              Alamat : Rumah Abah H. Sain <br />
+              Kp. Palanyar RT/RW 002/004 Desa Palanyar, Kecamatan Cipeucang,
+              Kabupaten Pandeglang, Provinsi Banten
             </p>
 
             <iframe
@@ -262,8 +281,8 @@
 
             <a
               href="https://maps.app.goo.gl/yUPViiMs8aK3iYUQ6"
-              class="btn btn-light btn-sm my-3"
-              target="_blank"
+              onclick="logAndOpenLink(event,'https://maps.app.goo.gl/yUPViiMs8aK3iYUQ6')"
+              class="btn btn-outline-custom btn-sm my-3"
               >Klik untuk membuka peta</a
             >
             <p class="description">
@@ -310,12 +329,164 @@
       </div>
     </section>
 
+    <section id="gifts" class="gifts">
+      <div
+        class="container text-center"
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Kasih</span>
+            <h3>Kirim Hadiah</h3>
+          </div>
+        </div>
+        <h3>&</h3>
+        <h3 class="text-center">Ucapan Pernikahan</h3>
+        <p class="text-center">
+          Kami sangat menghargai doa dan ucapan Anda di hari istimewa kami!
+        </p>
+        <button
+          type="button"
+          class="btn btn-outline-custom text-center mb-3"
+          data-bs-toggle="modal"
+          data-bs-target="#ucapanModal"
+        >
+          Berikan Ucapan
+        </button>
+
+        <!-- Modal untuk menampilkan form dan ucapan -->
+        <div
+          class="modal fade"
+          id="ucapanModal"
+          tabindex="-1"
+          aria-labelledby="ucapanModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ucapanModalLabel">
+                  Ucapan Pernikahan
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <!-- Form Ucapan di Modal -->
+                <form id="wedding-message-form">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama Anda</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nama"
+                      placeholder="Masukkan nama Anda"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="pesan" class="form-label">Ucapan Selamat</label>
+                    <textarea
+                      class="form-control"
+                      id="pesan"
+                      rows="3"
+                      placeholder="Masukkan ucapan selamat Anda"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="status" class="form-label"
+                      >Konfirmasi Kehadiran</label
+                    >
+                    <select
+                      class="form-select select-responsive"
+                      id="status"
+                      required
+                    >
+                      <option value="">Pilih Status</option>
+                      <option value="Hadir">Hadir</option>
+                      <option value="Tidak Hadir">Tidak Hadir</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-outline-custom">
+                    Kirim Ucapan
+                  </button>
+                </form>
+
+                <!-- Daftar Ucapan di Modal -->
+                <div class="mt-4">
+                  <h5>Ucapan yang Masuk</h5>
+                  <ul id="wedding-messages" class="list-group">
+                    <!-- Ucapan akan muncul di sini -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <img src="img/logo-bca.png" class="gift-logo mb-2" /><br />
+                6565085798 - MUTIA RATIH <br /><button
+                  id="btn-salin"
+                  class="btn btn-outline-custom btn-sm"
+                >
+                  Salin Rekening
+                </button>
+              </li>
+              <li class="list-group-item">
+                <img src="img/logo-bca.png" class="gift-logo mb-2" /><br />
+                4930574886 - NEZARD WILDAN KURNIAWAN SYAH <br /><button
+                  id="btn-salin2"
+                  class="btn btn-outline-custom btn-sm"
+                >
+                  Salin Rekening
+                </button>
+              </li>
+            </ul>
+            <p class="mt-3">
+              <b>
+                Dengan penuh rasa syukur dan bahagia, kami mengucapkan terima
+                kasih yang sebesar-besarnya atas kehadiran dan doa restu yang
+                telah Anda berikan di hari istimewa kami. Kehadiran Anda menjadi
+                anugerah dan kehormatan bagi kami dalam memulai lembaran baru
+                kehidupan ini.
+              </b>
+            </p>
+            <p class="mt-3">
+              <b>
+                Semoga kebaikan dan kebahagiaan senantiasa menyertai langkah
+                kita semua. Terima kasih atas segala doa, dukungan, dan
+                kebersamaan.
+              </b>
+            </p>
+            <p><i>Hormat Kami Yang Mengundang</i></p>
+            <h5>Nezaard & Mutia</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="gallery" class="gallery">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <span>Memori Kisah Kami</span>
-            <h2>Galeri Foto</h2>
+            <h2 class="mb-5">Galeri Foto</h2>
           </div>
         </div>
 
@@ -454,7 +625,6 @@
           <div class="col-4 col-lg-4 col-sm-4 mb-4 mb-lg-0">
             <img
               src="img/1726563867902.jpg"
-              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
               class="w-100 shadow-1-strong rounded mb-4"
               data-aos="fade-right"
               data-aos-offset="0"
@@ -668,60 +838,6 @@
 
     <!-- End Caraousel Sampai Sini -->
 
-    <section id="gifts" class="gifts">
-      <div
-        class="container"
-        data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>ungkapan tanda kasih</span>
-            <h2>Kirim Hadiah</h2>
-          </div>
-        </div>
-
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <img src="img/logo-bca.png" class="gift-logo mb-2" /><br />
-                6565085798 - MUTIA RATIH
-              </li>
-              <li class="list-group-item">
-                <img src="img/logo-bca.png" class="gift-logo mb-2" /><br />
-                4930574886 - NEZARD WILDAN KURNIAWAN SYAH
-              </li>
-            </ul>
-            <p class="mt-3">
-              <b>
-                Dengan penuh rasa syukur dan bahagia, kami mengucapkan terima
-                kasih yang sebesar-besarnya atas kehadiran dan doa restu yang
-                telah Anda berikan di hari istimewa kami. Kehadiran Anda menjadi
-                anugerah dan kehormatan bagi kami dalam memulai lembaran baru
-                kehidupan ini.
-              </b>
-            </p>
-            <p class="mt-3">
-              <b>
-                Semoga kebaikan dan kebahagiaan senantiasa menyertai langkah
-                kita semua. Terima kasih atas segala doa, dukungan, dan
-                kebersamaan.
-              </b>
-            </p>
-            <p><i>Hormat Kami Yang Mengundang</i></p>
-            <h5>Nezaard & Mutia</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <div class="container">
         <div class="row">
@@ -779,6 +895,171 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- Script untuk menyimpan dan menampilkan ucapan -->
+    <script>
+      // Fungsi untuk menambahkan ucapan ke daftar dalam modal
+      const colors = [
+        "#007bff",
+        "#28a745",
+        "#dc3545",
+        "#ffc107",
+        "#17a2b8",
+        "#6610f2",
+        "#6f42c1",
+      ];
+
+      function tambahUcapanKeDaftar(nama, pesan, status) {
+        const ucapanBaru = document.createElement("li");
+        ucapanBaru.classList.add(
+          "list-group-item",
+          "d-flex",
+          "flex-column",
+          "align-items-start"
+        );
+
+        const initials = nama
+          .split(" ")
+          .map((word) => word.charAt(0))
+          .join("")
+          .toUpperCase();
+        const statusClass = status ? status.replace(" ", "-") : "Hadir"; // Default ke 'Hadir' jika status undefined
+        // Menggunakan warna berdasarkan urutan tamu
+        const colorIndex =
+          document.querySelectorAll("#wedding-messages .list-group-item")
+            .length % colors.length;
+        const profileColor = colors[colorIndex];
+
+        ucapanBaru.innerHTML = `
+        <div class="d-flex align-items-center">
+            <div class="profile-pic" style="background-color: ${profileColor};">${initials}</div>
+            <strong>${nama}</strong>
+            <span class="status-box ${statusClass} ms-4">${status}</span>
+            
+        </div>
+        <div class="ucapan">${pesan} </div>
+        
+    `;
+        document.getElementById("wedding-messages").appendChild(ucapanBaru);
+      }
+
+      // Fungsi untuk menyimpan ucapan ke Local Storage
+      function simpanUcapanKeLocalStorage(nama, pesan, status) {
+        const ucapanTersimpan =
+          JSON.parse(localStorage.getItem("ucapan")) || [];
+        ucapanTersimpan.push({ nama, pesan, status });
+        localStorage.setItem("ucapan", JSON.stringify(ucapanTersimpan));
+      }
+
+      // Fungsi untuk menghapus ucapan dari Local Storage dan UI
+      function hapusUcapan(index) {
+        let ucapanTersimpan = JSON.parse(localStorage.getItem("ucapan")) || [];
+        ucapanTersimpan.splice(index, 1); // Hapus ucapan berdasarkan index
+        localStorage.setItem("ucapan", JSON.stringify(ucapanTersimpan)); // Update Local Storage
+
+        // Reset UI dan muat ulang ucapan
+        document
+          .getElementById("wedding-messages")
+          .querySelector("ul").innerHTML = "";
+        muatUcapan();
+      }
+
+      // Fungsi untuk memuat ucapan dari Local Storage saat modal dibuka
+      function muatUcapan() {
+        const ucapanTersimpan =
+          JSON.parse(localStorage.getItem("ucapan")) || [];
+        ucapanTersimpan.forEach((item) => {
+          tambahUcapanKeDaftar(item.nama, item.pesan, item.status);
+        });
+      }
+
+      // Event listener untuk form kirim ucapan
+      document
+        .getElementById("wedding-message-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah reload halaman
+
+          // Ambil nilai dari input form
+          const nama = document.getElementById("nama").value;
+          const pesan = document.getElementById("pesan").value;
+          const status = document.getElementById("status").value;
+
+          // Validasi agar input tidak kosong
+          if (nama && pesan && status) {
+            // Tambahkan ucapan baru ke daftar di modal dan simpan ke Local Storage
+            tambahUcapanKeDaftar(nama, pesan, status);
+            simpanUcapanKeLocalStorage(nama, pesan, status);
+
+            // Kosongkan form setelah submit
+            document.getElementById("nama").value = "";
+            document.getElementById("pesan").value = "";
+            document.getElementById("status").value = "";
+          }
+        });
+
+      // Memuat ucapan saat modal dibuka
+      document
+        .getElementById("ucapanModal")
+        .addEventListener("show.bs.modal", function () {
+          document.getElementById("wedding-messages").innerHTML = ""; // Bersihkan daftar sebelum memuat ulang
+          muatUcapan();
+        });
+
+      // Event Listener untuk menghapus ucapan
+      document
+        .getElementById("wedding-messages")
+        .addEventListener("click", function (event) {
+          if (event.target.classList.contains("hapus-ucapan")) {
+            const index = event.target.getAttribute("data-index");
+            hapusUcapan(index);
+          }
+        });
+
+      // Memastikan ucapan tetap ada saat halaman dimuat
+      window.addEventListener("load", muatUcapan);
+    </script>
+
+    <!-- Script Salin Nomor Rekening -->
+    <script>
+      document
+        .getElementById("btn-salin")
+        .addEventListener("click", function () {
+          const nomorAtm = "6565085798"; // Ganti dengan nomor telepon yang ingin disalin
+
+          navigator.clipboard
+            .writeText(nomorAtm)
+            .then(() => {
+              const button = document.getElementById("btn-salin");
+              button.textContent = "Berhasil Disalin!"; // Ubah teks tombol
+              setTimeout(() => {
+                button.textContent = "Salin Rekening"; // Kembalikan teks tombol setelah 2 detik
+              }, 2000);
+            })
+            .catch((err) => {
+              console.error("Gagal menyalin: ", err);
+            });
+        });
+
+      // Salin No Rekening ke 2
+      document
+        .getElementById("btn-salin2")
+        .addEventListener("click", function () {
+          const nomorAtm2 = "4930574886"; // Ganti dengan nomor telepon yang ingin disalin
+
+          navigator.clipboard
+            .writeText(nomorAtm2)
+            .then(() => {
+              const button = document.getElementById("btn-salin2");
+              button.textContent = "Berhasil Disalin!"; // Ubah teks tombol
+              setTimeout(() => {
+                button.textContent = "Salin Rekening"; // Kembalikan teks tombol setelah 2 detik
+              }, 2000);
+            })
+            .catch((err) => {
+              console.error("Gagal menyalin: ", err);
+            });
+        });
     </script>
 
     <!-- Script untuk mengatur slide pada klik thumbnail -->
@@ -892,29 +1173,20 @@
       disableScroll();
     </script>
     <script>
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
-            alert("Konfirmasi kehadiran berhasil terkirim!");
-          });
-        });
-      });
-    </script>
-    <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const nama = urlParams.get("n") || "";
+      const nama = urlParams.get("tamu") || "";
       const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
       const namaContainer = document.querySelector(".hero h4 span");
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
       document.querySelector("#nama").value = nama;
+    </script>
+    <script>
+      function logAndOpenLink(event, url) {
+        event.preventDefault(); // Mencegah perilaku default
+        console.log("Link akan dibuka:", url); // Log link ke konsol
+        window.open(url, "_blank"); // Buka link di tab baru
+      }
     </script>
   </body>
 </html>
